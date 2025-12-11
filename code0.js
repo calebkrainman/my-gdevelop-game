@@ -562,7 +562,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(runtimeScene.getObjects("HealthText"), gdjs.Untitled_32sceneCode.GDHealthTextObjects2);
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Untitled_32sceneCode.GDPlayerObjects2);
 {for(var i = 0, len = gdjs.Untitled_32sceneCode.GDHealthTextObjects2.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDHealthTextObjects2[i].getBehavior("Text").setText("Difficulty = " + gdjs.evtTools.common.toString(((gdjs.Untitled_32sceneCode.GDPlayerObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.Untitled_32sceneCode.GDPlayerObjects2[0].getVariables()).getFromIndex(2).getAsNumber()));
+    gdjs.Untitled_32sceneCode.GDHealthTextObjects2[i].getBehavior("Text").setText("Health = " + gdjs.evtTools.common.toString(((gdjs.Untitled_32sceneCode.GDPlayerObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.Untitled_32sceneCode.GDPlayerObjects2[0].getVariables()).getFromIndex(2).getAsNumber()));
 }
 }
 }
