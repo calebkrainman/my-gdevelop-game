@@ -16,6 +16,15 @@ gdjs.Untitled_32sceneCode.GDBackgroundObjects3= [];
 gdjs.Untitled_32sceneCode.GDPlayerBulletObjects1= [];
 gdjs.Untitled_32sceneCode.GDPlayerBulletObjects2= [];
 gdjs.Untitled_32sceneCode.GDPlayerBulletObjects3= [];
+gdjs.Untitled_32sceneCode.GDHealthTextObjects1= [];
+gdjs.Untitled_32sceneCode.GDHealthTextObjects2= [];
+gdjs.Untitled_32sceneCode.GDHealthTextObjects3= [];
+gdjs.Untitled_32sceneCode.GDDifficultyTextObjects1= [];
+gdjs.Untitled_32sceneCode.GDDifficultyTextObjects2= [];
+gdjs.Untitled_32sceneCode.GDDifficultyTextObjects3= [];
+gdjs.Untitled_32sceneCode.GDNewSpriteObjects1= [];
+gdjs.Untitled_32sceneCode.GDNewSpriteObjects2= [];
+gdjs.Untitled_32sceneCode.GDNewSpriteObjects3= [];
 
 
 gdjs.Untitled_32sceneCode.eventsList0 = function(runtimeScene) {
@@ -537,7 +546,23 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Untitled_32sceneCode.GDPlayerObjects2);
 gdjs.copyArray(runtimeScene.getObjects("PlayerBullet"), gdjs.Untitled_32sceneCode.GDPlayerBulletObjects2);
 {for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerBulletObjects2.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDPlayerBulletObjects2[i].getBehavior("Text").setText("Shots Remaining = " + gdjs.evtTools.common.toString(((gdjs.Untitled_32sceneCode.GDPlayerObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.Untitled_32sceneCode.GDPlayerObjects2[0].getVariables()).getFromIndex(1).getAsNumber()) + "  Health = " + gdjs.evtTools.common.toString(((gdjs.Untitled_32sceneCode.GDPlayerObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.Untitled_32sceneCode.GDPlayerObjects2[0].getVariables()).getFromIndex(2).getAsNumber()) + "Difficulty = " + runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
+    gdjs.Untitled_32sceneCode.GDPlayerBulletObjects2[i].getBehavior("Text").setText("Shots Remaining = " + gdjs.evtTools.common.toString(((gdjs.Untitled_32sceneCode.GDPlayerObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.Untitled_32sceneCode.GDPlayerObjects2[0].getVariables()).getFromIndex(1).getAsNumber()));
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("HealthText"), gdjs.Untitled_32sceneCode.GDHealthTextObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Untitled_32sceneCode.GDPlayerObjects2);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDHealthTextObjects2.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDHealthTextObjects2[i].getBehavior("Text").setText("Difficulty = " + gdjs.evtTools.common.toString(((gdjs.Untitled_32sceneCode.GDPlayerObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.Untitled_32sceneCode.GDPlayerObjects2[0].getVariables()).getFromIndex(2).getAsNumber()));
 }
 }
 }
@@ -597,6 +622,21 @@ gdjs.Untitled_32sceneCode.eventsList5(runtimeScene);
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("DifficultyText"), gdjs.Untitled_32sceneCode.GDDifficultyTextObjects1);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDDifficultyTextObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDDifficultyTextObjects1[i].getBehavior("Text").setText("Difficulty = " + gdjs.evtTools.common.toString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber()));
+}
+}
+}
+
+}
+
+
 };
 
 gdjs.Untitled_32sceneCode.func = function(runtimeScene) {
@@ -617,6 +657,15 @@ gdjs.Untitled_32sceneCode.GDBackgroundObjects3.length = 0;
 gdjs.Untitled_32sceneCode.GDPlayerBulletObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDPlayerBulletObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDPlayerBulletObjects3.length = 0;
+gdjs.Untitled_32sceneCode.GDHealthTextObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDHealthTextObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDHealthTextObjects3.length = 0;
+gdjs.Untitled_32sceneCode.GDDifficultyTextObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDDifficultyTextObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDDifficultyTextObjects3.length = 0;
+gdjs.Untitled_32sceneCode.GDNewSpriteObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDNewSpriteObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDNewSpriteObjects3.length = 0;
 
 gdjs.Untitled_32sceneCode.eventsList6(runtimeScene);
 gdjs.Untitled_32sceneCode.GDPlayerObjects1.length = 0;
@@ -634,6 +683,15 @@ gdjs.Untitled_32sceneCode.GDBackgroundObjects3.length = 0;
 gdjs.Untitled_32sceneCode.GDPlayerBulletObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDPlayerBulletObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDPlayerBulletObjects3.length = 0;
+gdjs.Untitled_32sceneCode.GDHealthTextObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDHealthTextObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDHealthTextObjects3.length = 0;
+gdjs.Untitled_32sceneCode.GDDifficultyTextObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDDifficultyTextObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDDifficultyTextObjects3.length = 0;
+gdjs.Untitled_32sceneCode.GDNewSpriteObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDNewSpriteObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDNewSpriteObjects3.length = 0;
 
 
 return;
